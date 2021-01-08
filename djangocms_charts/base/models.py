@@ -31,6 +31,7 @@ class ChartsBaseModel(CMSPlugin):
     title_display = models.BooleanField(_("Display Title"), default=True)
     legend_display = models.BooleanField(_("Display Legend"), default=True)
     legend_position = models.CharField(_("Legend Position"), max_length=100, blank=True)
+    format_money = models.BooleanField(_("Format for Money"), default=False)
 
     # Get chart class - defined by cls.chart_type e.g. line-chart
     @classmethod

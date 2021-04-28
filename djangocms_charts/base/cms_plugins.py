@@ -17,7 +17,7 @@ class ChartsBasePlugin(CMSPluginBase):
             'fields': ('table_data', 'csv_upload')
         }),
         (_("Legend Settings"), {
-            'fields': (('title_display', 'legend_display', 'legend_position'))
+            'fields': (('title_display', 'legend_display', 'legend_position', 'format_money'))
         }),
         (_("Chart Settings"), {
             'fields': (('chart_width', 'chart_height', 'chart_position'))

@@ -4,7 +4,6 @@ from django.utils.translation import ugettext_lazy as _
 
 class ChartsBasePlugin(CMSPluginBase):
 
-    text_enabled = True
     readonly_fields = ('chart_id', 'chart_container_id', 'chart_title_id', 'legend_id')
     fieldsets = (
         (None, {
